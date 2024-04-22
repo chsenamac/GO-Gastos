@@ -13,4 +13,5 @@ require (
 	golang.org/x/crypto v0.19.0 // indirect
 	golang.org/x/net v0.21.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
+	github.com/chsenamac/GO-Gastos/customlibs v0.0.0-20231025114914-d1ff6096ae53 //indirect
 )
