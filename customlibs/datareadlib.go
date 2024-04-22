@@ -1,21 +1,20 @@
-package data
+package customlibs
 
 import (
-    "fmt"
-    "log"
+	"fmt"
+	"log"
 
-    "github.com/xuri/excelize/v2"
+	"github.com/xuri/excelize/v2"
 )
 
-
-func ReadDataXLSX() {
-    // Abrir el archivo de Excel
-    f, err := excelize.OpenFile("ejemplo.xlsx")
+//Read data from an Excel file
+func ReadDataXLSX(filepath string) {
+    f, err := excelize.OpenFile(filepath)
     if err != nil {
         log.Fatal(err)
     }
 
-    // Obtener las filas de la hoja de cálculo
+    // gets the rows of the sheet
     rows, err := f.GetRows("Sheet1")
     if err != nil {
         log.Fatal(err)
